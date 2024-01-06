@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ApplicationDbContextStoreContainer" CdmEntityContainer="ApplicationDbContextContainer">
+    <EntitySetMapping Name="Personas">
+      <EntityTypeMapping TypeName="IsTypeOf(ApplicationDbContext.Persona)">
+        <MappingFragment StoreEntitySet="Personas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Cuil" ColumnName="Cuil" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="HorarioTrabajo" ColumnName="HorarioTrabajo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(ApplicationDbContext.Administrativo)">
+        <MappingFragment StoreEntitySet="Personas_Administrativo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Sector" ColumnName="Sector" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(ApplicationDbContext.Empleado)">
+        <MappingFragment StoreEntitySet="Personas_Empleado">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SecursalAsignada" ColumnName="SecursalAsignada" />
+          <ScalarProperty Name="AdministradorAsignado" ColumnName="AdministradorAsignado" />
+          <ScalarProperty Name="NroCaja" ColumnName="NroCaja" />
+          <ScalarProperty Name="BoletosVendidos" ColumnName="BoletosVendidos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sucursales">
+      <EntityTypeMapping TypeName="IsTypeOf(ApplicationDbContext.Sucursal)">
+        <MappingFragment StoreEntitySet="Sucursales">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Horarios" ColumnName="Horarios" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="IsTypeOf(ApplicationDbContext.Cliente)">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Peliculas">
+      <EntityTypeMapping TypeName="IsTypeOf(ApplicationDbContext.Pelicula)">
+        <MappingFragment StoreEntitySet="Peliculas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Duracion" ColumnName="Duracion" />
+          <ScalarProperty Name="Genero" ColumnName="Genero" />
+          <ScalarProperty Name="Idioma" ColumnName="Idioma" />
+          <ScalarProperty Name="Subtitulos" ColumnName="Subtitulos" />
+          <ScalarProperty Name="Ideoma" ColumnName="Ideoma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

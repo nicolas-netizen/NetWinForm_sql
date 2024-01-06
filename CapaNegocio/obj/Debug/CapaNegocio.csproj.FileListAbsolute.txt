@@ -1,0 +1,12 @@
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\bin\Debug\EntityFramework.dll
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\bin\Debug\CapaDatos.dll.config
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\bin\Debug\EntityFramework.xml
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\tig9\source\repos\TP Integrados Programacion\CapaNegocio\obj\Debug\CapaNegocio.pdb

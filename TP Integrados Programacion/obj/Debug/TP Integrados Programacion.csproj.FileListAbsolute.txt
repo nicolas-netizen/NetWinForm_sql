@@ -1,0 +1,24 @@
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP Integrados Programacion.csproj.AssemblyReference.cache
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP_Integrados_Programacion.Properties.Resources.resources
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP Integrados Programacion.csproj.GenerateResource.cache
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP Integrados Programacion.csproj.CoreCompileInputs.cache
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP_Integrados_Programacion.Form1.resources
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP_Integrados_Programacion.FormIngresarAdministrador.resources
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP_Integrados_Programacion.FormIngresarPelicula.resources
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP_Integrados_Programacion.FormIngresarSucursal.resources
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP_Integrados_Programacion.FormRegistrarEmpleado.resources
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP_Integrados_Programacion.FormVentaDeBoletos.resources
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP_Integrados_Programacion.FormVisualizacionGeneral.resources
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\bin\Debug\TP Integrados Programacion.exe.config
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\bin\Debug\TP Integrados Programacion.exe
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\bin\Debug\TP Integrados Programacion.pdb
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\bin\Debug\CapaDatos.dll
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\bin\Debug\CapaNegocio.dll
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\bin\Debug\EntityFramework.dll
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\bin\Debug\CapaDatos.pdb
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\bin\Debug\CapaDatos.dll.config
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\bin\Debug\CapaNegocio.pdb
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\bin\Debug\EntityFramework.xml
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP Integrados Programacion.csproj.CopyComplete
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP Integrados Programacion.exe
+C:\Users\tig9\source\repos\TP Integrados Programacion\TP Integrados Programacion\obj\Debug\TP Integrados Programacion.pdb

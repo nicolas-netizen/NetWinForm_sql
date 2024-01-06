@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ApplicationDbContext.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ApplicationDbContextStoreContainer">
+    <EntitySet Name="Personas" EntityType="ApplicationDbContext.Store.Personas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sucursales" EntityType="ApplicationDbContext.Store.Sucursales" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Clientes" EntityType="ApplicationDbContext.Store.Clientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Peliculas" EntityType="ApplicationDbContext.Store.Peliculas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Personas_Administrativo" EntityType="ApplicationDbContext.Store.Personas_Administrativo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Personas_Empleado" EntityType="ApplicationDbContext.Store.Personas_Empleado" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Administrativo_inherits_Persona" Association="ApplicationDbContext.Store.FK_Administrativo_inherits_Persona">
+      <End Role="Persona" EntitySet="Personas" />
+      <End Role="Administrativo" EntitySet="Personas_Administrativo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleado_inherits_Persona" Association="ApplicationDbContext.Store.FK_Empleado_inherits_Persona">
+      <End Role="Persona" EntitySet="Personas" />
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Personas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Apellido" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Cuil" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Edad" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HorarioTrabajo" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sucursales">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Direccion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Horarios" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Peliculas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Duracion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Genero" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Idioma" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Subtitulos" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Ideoma" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Personas_Administrativo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Sector" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Personas_Empleado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="SecursalAsignada" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AdministradorAsignado" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NroCaja" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="BoletosVendidos" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Administrativo_inherits_Persona">
+    <End Role="Persona" Type="ApplicationDbContext.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Administrativo" Type="ApplicationDbContext.Store.Personas_Administrativo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Administrativo">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleado_inherits_Persona">
+    <End Role="Persona" Type="ApplicationDbContext.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Empleado" Type="ApplicationDbContext.Store.Personas_Empleado" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
